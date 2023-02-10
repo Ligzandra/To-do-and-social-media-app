@@ -1,0 +1,216 @@
+
+
+body {
+  background-color: aliceblue;
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: background-color 0.2s ease-in 0.2s;
+}
+.navBar a:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+#msg {
+  color: red;
+}
+#posts {
+  /* width: 50%; */
+}
+
+i {
+  cursor: pointer;
+}
+#posts div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options {
+  display: flex;
+  gap: 25px;
+}
+
+#msg,
+#datemsg,
+#descpmsg {
+  color: red;
+}
+
+.links_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.success {
+  color: green;
+}
+.to_do {
+  width: 60%;
+  margin: auto;
+  /* background-color: #747373; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 700px;
+}
+
+.app {
+  background-color: black;
+  width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  padding: 15px;
+  color: white;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+.fa-plus {
+  background-color: goldenrod;
+  padding: 3px;
+  border-radius: 3px;
+  color: white;
+}
+.to_do_form {
+  color: black;
+}
+
+#tasks {
+  width: 400px;
+  height: 300px;
+  overflow-y: scroll;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  border: 2px solid whitesmoke;
+  padding: 10px 20px;
+  border-radius: 8px;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid goldenrod;
+  background-color: rgb(227, 224, 215);
+  border-radius: 6px;
+  padding: 5px;
+  height: 150px;
+  display: grid;
+  gap: 4px;
+  transition: transform 0.2s ease-in 0.2s;
+  cursor: pointer;
+}
+#tasks div:hover {
+  transform: scale(1.1);
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+/* chat area */
+
+.chat_body {
+  width: 50%;
+  margin: auto;
+
+}
+
+.container {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+}
+.right {
+  width: 70%;
+}
+.right h3 {
+  text-align: center;
+}
+.chat_title {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+
+  padding: 10px;
+}
+.post_btn {
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+}
+#posts {
+  background-color: cornflowerblue;
+  height: 250px;
+overflow-y: scroll;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+#posts div {
+  background-color: whitesmoke;
+  padding: 5px 10px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in 0.2s;
+  border-radius: 6px;
+}
+#posts div:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+#posts div p {
+  width: 90%;
+  word-wrap: break-word;
+  font-size: small;
+  text-overflow: ellipsis;
+}
+#posts div p::before {
+  content: '"';
+}
+#posts div p::after {
+  content: '"';
+}
+
+@media (max-width: 700px) {
+  .chat_body {
+    width: 100%;
+  }
+}
